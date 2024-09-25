@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.tabs {
+    margin: 50px;
+    position: relative;
+}
+
+.tabs__btns {
+    display: flex;
+    gap: 3px;
+}
+
+.tab__btn {
+    cursor: pointer;
+    background-color: bisque;
+    padding: 10px;
+    width: 130px;
+    text-align: center;
+}
+
+.tab__btn.active {
+    background-color: rgb(70 72 6);
+    color: rgb(211, 128, 19);
+}
+
+.tab__text {
+    position: absolute;
+    top: 100%;
+    padding: 15px;
+    background-color: rgb(70 72 6);
+    max-width: 500px;
+    visibility: hidden;
+    color: rgb(211, 128, 19);
+}
+
+.tab__text.active {
+    visibility: visible;
+}
